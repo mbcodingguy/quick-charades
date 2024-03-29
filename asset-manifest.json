@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/quick-charades/static/css/main.cb24ed6d.css",
-    "main.js": "/quick-charades/static/js/main.ba8c8112.js",
+    "main.css": "/quick-charades/static/css/main.ce3de9bf.css",
+    "main.js": "/quick-charades/static/js/main.7d2daa48.js",
     "static/js/453.cd2fb384.chunk.js": "/quick-charades/static/js/453.cd2fb384.chunk.js",
-    "static/media/logo.svg": "/quick-charades/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/quick-charades/index.html",
-    "main.cb24ed6d.css.map": "/quick-charades/static/css/main.cb24ed6d.css.map",
-    "main.ba8c8112.js.map": "/quick-charades/static/js/main.ba8c8112.js.map",
+    "main.ce3de9bf.css.map": "/quick-charades/static/css/main.ce3de9bf.css.map",
+    "main.7d2daa48.js.map": "/quick-charades/static/js/main.7d2daa48.js.map",
     "453.cd2fb384.chunk.js.map": "/quick-charades/static/js/453.cd2fb384.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb24ed6d.css",
-    "static/js/main.ba8c8112.js"
+    "static/css/main.ce3de9bf.css",
+    "static/js/main.7d2daa48.js"
   ]
 }
