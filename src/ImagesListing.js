@@ -21,7 +21,6 @@ function ImagesListing() {
     {"name":"dog","pic":dog},
     {"name":"fish","pic":fish},
     {"name":"horse","pic":horse},
-    {"name":"bunny","pic":bunny},
     {"name":"lion","pic":lion},
     {"name":"monkey","pic":monkey},
     {"name":"penguin","pic":penguin}

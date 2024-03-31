@@ -17,7 +17,7 @@ return (
                 <div className="header"> Playing Quick Charades </div>
                 <div className="popup-text">
                     <ol>
-                        <li>Choose the actor</li>
+                        <li>Choose who will be the actor</li>
                         <li>Turn the screen so only the actor can see</li>
                         <li>Tap or click the image to show the next one</li>
                         <li>Without speaking, act out the image so the audience can guess it</li>
