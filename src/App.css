@@ -49,6 +49,50 @@ img.tall {
   color: white;
 }
 
+#help-popup-button {
+  border:none;
+  position:absolute;
+  right:5px;
+  top:5px;
+}
+#help-popup-button img {
+  height: 30px;
+}
+#helpBox * {
+  color: white;
+  padding: 2px;
+}
+#helpBox ol {
+  list-style-position: inside;
+}
+#helpBox li {
+  text-align: left;
+  text-indent: 3em;
+}
+#helpBox .corner-close {
+  font-size: 1.1em;
+  position:absolute;
+  right: -10px;
+  top: -10px;
+  padding: 2px 5px;
+  border: 3px solid white;
+  border-radius: 18px;
+}
+#helpBox .help-close {
+  font-size: 1.1em;
+  padding: 3px;
+  margin: 5px;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+#helpBox .close {
+  cursor: pointer;
+}
+#helpBox .header {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
 .center-fit {
   max-width: 100%;
   max-height: 100vh;
