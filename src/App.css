@@ -8,15 +8,19 @@
   height: 1vh;
 }
 
+#labelbox {
+  cursor: pointer;
+}
 .imgbox {
   width: 100vw;
-  height: 60vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   color: white;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  cursor: pointer;
 }
 .imgbox.wide {
   flex-direction: column;
@@ -91,6 +95,45 @@ img.tall {
 #helpBox .header {
   font-weight: bold;
   font-size: 1.2em;
+}
+
+
+#timerbox {
+  justify-content: center;
+  display:flex;
+}
+#timerbox #show-timer-button, #timerbox #hide-timer-button {
+  max-width: 30px;
+  background-color: #282c34;
+  padding:3px;
+  border:none;
+  position:absolute;
+  right:13px;
+  top:45px;
+}
+#timerbox #hide-timer-button img, #timerbox #show-timer-button img {
+  max-width: 25px;
+  border-radius: 10px;
+  background-color:none;
+}
+#timerbox #show-timer-button img {
+  border: 2px solid lightgray;
+}
+#timerbox #hide-timer-button img {
+  border: 2px solid red;
+}
+#timerbox #countdown {
+  font-size:12vh;
+  border-radius:5px;
+  border:2px solid white;
+}
+#timerbox #countdown.time-remaining {
+  color:#282c34;
+  background-color:lightskyblue;
+}
+#timerbox #countdown.out-of-time {
+  color:white;
+  background-color:red;
 }
 
 .center-fit {
