@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/quick-charades/static/css/main.54f83c45.css",
-    "main.js": "/quick-charades/static/js/main.4aaf737c.js",
+    "main.css": "/quick-charades/static/css/main.2567b528.css",
+    "main.js": "/quick-charades/static/js/main.7bd4a1be.js",
     "static/js/453.cd2fb384.chunk.js": "/quick-charades/static/js/453.cd2fb384.chunk.js",
     "static/media/cat.png": "/quick-charades/static/media/cat.4d7d488ffa7b75b8fcf0.png",
     "static/media/monkey.png": "/quick-charades/static/media/monkey.21ab67847d38a278602f.png",
@@ -10,12 +10,12 @@
     "static/media/lion.png": "/quick-charades/static/media/lion.a57b6df909730c804bea.png",
     "static/media/bunny.png": "/quick-charades/static/media/bunny.91bb3ef4765185df01fb.png",
     "index.html": "/quick-charades/index.html",
-    "main.54f83c45.css.map": "/quick-charades/static/css/main.54f83c45.css.map",
-    "main.4aaf737c.js.map": "/quick-charades/static/js/main.4aaf737c.js.map",
+    "main.2567b528.css.map": "/quick-charades/static/css/main.2567b528.css.map",
+    "main.7bd4a1be.js.map": "/quick-charades/static/js/main.7bd4a1be.js.map",
     "453.cd2fb384.chunk.js.map": "/quick-charades/static/js/453.cd2fb384.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54f83c45.css",
-    "static/js/main.4aaf737c.js"
+    "static/css/main.2567b528.css",
+    "static/js/main.7bd4a1be.js"
   ]
 }
