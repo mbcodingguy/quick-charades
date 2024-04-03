@@ -8,7 +8,7 @@ import Timer from './Timer';
 ImageManager.randomizeImageOrder();
 
 function App() {
-  let timeLimit = 5;
+  const [timeLimit, setTimeLimit] = useState(60);
   const [timeLeft, setTimeLeft] = useState(timeLimit);
 
   function getNewImage(e) {
@@ -52,7 +52,7 @@ function App() {
           All images from openclipart.org
         </p>
         </div>
-    < Timer timeLeft={timeLeft} setTimeLeft={setTimeLeft} />
+    < Timer timeLimit={timeLimit} setTimeLimit={setTimeLimit} timeLeft={timeLeft} setTimeLeft={setTimeLeft} />
     </div>
   );
 }

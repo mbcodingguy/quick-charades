@@ -126,6 +126,7 @@ img.tall {
   font-size:12vh;
   border-radius:5px;
   border:2px solid white;
+  position:relative;
 }
 #timerbox #countdown.time-remaining {
   color:#282c34;
@@ -134,6 +135,47 @@ img.tall {
 #timerbox #countdown.out-of-time {
   color:white;
   background-color:red;
+}
+#countdown #edit-timer-button {
+  max-width: 30px;
+  background:none;
+  padding:3px;
+  border:none;
+  position:absolute;
+  right:-3vw;
+  top:-5px;
+}
+#countdown #edit-timer-button img {
+  max-width: 25px;
+  width: 3vw;
+  border-radius: 10px;
+  background-color:none;
+}#countdown #edit-timer-button img {
+  border: 2px solid white;
+}
+.popup-content:has(>#time-limit-editor) {
+  width:150px;
+  max-width:200px;
+}
+#time-limit-editor * {
+  color: white;
+  padding: 2px;
+}
+#time-limit-editor input {
+  min-width:30px;
+  max-width:50px;
+}
+#time-limit-editor .corner-close {
+  font-size: 1.1em;
+  position:absolute;
+  right: -10px;
+  top: -10px;
+  padding: 2px 5px;
+  border: 3px solid white;
+  border-radius: 18px;
+}
+#time-limit-editor .close {
+  cursor: pointer;
 }
 
 .center-fit {

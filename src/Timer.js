@@ -1,8 +1,11 @@
 import alarm from './images-site/alarm.png';
 import noalarm from './images-site/noalarm.png';
+import editalarm from './images-site/edit.png';
 import React, { useState, useEffect, useRef } from 'react';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
-function Timer({timeLeft, setTimeLeft}) {
+function Timer({timeLimit, setTimeLimit, timeLeft, setTimeLeft}) {
     const [usingTimer, enableTimer] = useState(false);
     const [hasTimeRemaining, setFlagTimeRemaining] = useState(true);
     
@@ -60,7 +63,34 @@ return (
         <>
         <button id="hide-timer-button" onClick={() => enableTimer(!usingTimer)} > <img src={noalarm} alt="Help"  /></button>
         <div id="countdown" className="time-remaining">
-        {timeLeft}
+            <Popup trigger=
+                {<button id="edit-timer-button"> <img src={editalarm} alt="Edit"  /></button>}
+                modal nested>
+                { close => (
+                <div id="time-limit-editor" className="popup-modal">
+                    <button className="corner-close close" onClick={() => close()}>
+                    &times;
+                    </button>
+                    <div className="popup-editor">
+                        <label>Time Limit
+                        <input 
+                            value={timeLimit}
+                            onKeyPress={e => {
+                                if (!/[0-9]/.test(e.key)) {
+                                    e.preventDefault();
+                                }
+                            }}
+                            onChange={e => {
+                                setTimeLimit(e.target.value);
+                                setTimeLeft(e.target.value);
+                            }}
+                        />
+                        </label>
+                    </div>
+                </div>
+            )}
+            </Popup>
+            {timeLeft}
         </div>
         </>
         )}
