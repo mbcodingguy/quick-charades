@@ -1,11 +1,15 @@
 import logo from './images-site/logo.png';
+import React, { useState } from 'react';
 import * as ImageManager from './ImageManager';
 import './App.css';
 import Help from './Help';
+import Timer from './Timer';
 
 ImageManager.randomizeImageOrder();
 
 function App() {
+  const [timeLimit, setTimeLimit] = useState(60);
+  const [timeLeft, setTimeLeft] = useState(timeLimit);
 
   function getNewImage(e) {
     const mainImage = document.getElementById("mainImage");
@@ -27,17 +31,18 @@ function App() {
 
     mainImage.classList.add(nextImageObject["longSide"]);
     parent.classList.add(nextImageObject["longSide"]);
+    setTimeLeft(timeLimit);
   }
 
   return (
-    <div className="App" onClick={getNewImage} >
+    <div className="App" >
     < Help />
       <div className="empty-container">
       </div>
-      <div className="imgbox">
+      <div className="imgbox" onClick={getNewImage}>
         <img id="mainImage" src={logo} className="center-fit" alt="logo"/>
       </div>
-      <div>
+      <div id="labelbox" onClick={getNewImage}>
         <p id="mainLabel" className="pic-text main-text">
           Quick Charades! Click to start with first image.
         </p>
@@ -47,6 +52,7 @@ function App() {
           All images from openclipart.org
         </p>
         </div>
+    < Timer timeLimit={timeLimit} setTimeLimit={setTimeLimit} timeLeft={timeLeft} setTimeLeft={setTimeLeft} />
     </div>
   );
 }
