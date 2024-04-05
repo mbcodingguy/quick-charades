@@ -42,9 +42,9 @@ function App() {
       <div className="imgbox" onClick={getNewImage}>
         <img id="mainImage" src={logo} className="center-fit" alt="logo"/>
       </div>
-      <div id="labelbox" onClick={getNewImage}>
+      <div id="labelbox" className="unselectable" onClick={getNewImage}>
         <p id="mainLabel" className="pic-text main-text">
-          Quick Charades! Click to start with first image.
+          Quick Charades! Click the image to advance to the next image.
         </p>
         <p id="mainLabel2" className="pic-text main-text">
         </p>

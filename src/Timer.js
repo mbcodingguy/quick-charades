@@ -74,6 +74,7 @@ return (
                     <div className="popup-editor">
                         <label>Time Limit
                         <input 
+                            type="number"
                             value={timeLimit}
                             onKeyPress={e => {
                                 if (!/[0-9]/.test(e.key)) {

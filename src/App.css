@@ -3,6 +3,15 @@
   background-color: #282c34;
 }
 
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .empty-container {
   width: 1vw;
   height: 1vh;
@@ -137,6 +146,7 @@ img.tall {
   background-color:red;
 }
 #countdown #edit-timer-button {
+  min-width: 20px;
   max-width: 30px;
   background:none;
   padding:3px;
@@ -158,12 +168,13 @@ img.tall {
   max-width:200px;
 }
 #time-limit-editor * {
+  font-size: 16px;
   color: white;
   padding: 2px;
 }
 #time-limit-editor input {
-  min-width:30px;
-  max-width:50px;
+  min-width:50px;
+  max-width:80px;
 }
 #time-limit-editor .corner-close {
   font-size: 1.1em;
